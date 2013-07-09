@@ -39,7 +39,7 @@ class lkd:
         response = requests.get(url)
         return response.json()
 
-    def get_about(self):
+    def about(self):
         """
         Returns a dictionary with details about the user. Contains:
         id, username, email, realname, bio, status, added, updated,
@@ -47,7 +47,7 @@ class lkd:
         """
         return self.data['about']
 
-    def get_links(self):
+    def links(self):
         """
         Returns a dictionary with user's social links
         """
@@ -57,7 +57,7 @@ class lkd:
             links[key] = data[key]['url']
         return links
 
-    def get_vcf(self):
+    def vcf(self):
         """
         Downloads the vcf card for the user in current directory.
         """
