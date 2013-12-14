@@ -20,5 +20,5 @@ Usage
 
     from lkd import LKD
     
-    karan = lkd('karan')
+    karan = LKD('karan')
     print karan.about()['realname']

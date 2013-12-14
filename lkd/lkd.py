@@ -30,7 +30,7 @@ SOFTWARE.
 
 import requests
 
-class LKD:
+class lkd(object):
     def __init__(self, user):
         """
         Initialize a new lkd object for the passed user.
