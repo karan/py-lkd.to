@@ -41,4 +41,4 @@ def test_links_gplus():
     '''
     Check if the g+ link is correct or not
     '''
-    assert l.links()['google-plus']['url'] == 'https://plus.google.com/u/102240996167520070348'
+    assert l.links()['google-plus'] == 'https://plus.google.com/u/102240996167520070348'
