@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 
+from nose.tools import raises
+
 from lkd import lkd
+
+@raises(Exception)
+def test_invalid_user_exception():
+    '''
+    Check if exception is thrown on invalid username
+    '''
+    lkd('does-not-exist')
 
 l = lkd('karan')
 
@@ -27,3 +36,9 @@ def test_get_json_links_gplus():
     Check if the g+ link is correct or not
     '''
     assert l.get_json()['links']['google-plus']['url'] == 'https://plus.google.com/u/102240996167520070348'
+
+def test_links_gplus():
+    '''
+    Check if the g+ link is correct or not
+    '''
+    assert l.links()['google-plus']['url'] == 'https://plus.google.com/u/102240996167520070348'
