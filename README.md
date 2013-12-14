@@ -18,7 +18,7 @@ Dependencies
 Usage
 ------
 
-    from lkd import lkd
+    from lkd import LKD
     
     karan = lkd('karan')
     print karan.about()['realname']

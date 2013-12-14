@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='lkd',
-    version='1',
+    version='2',
     packages=['lkd',],
     author='Karan Goel',
     author_email='karan@goel.im',
